@@ -4,6 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currency Convertor</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body></body>
+  <body>
+    <!-- <img src="https://flagsapi.com/BE/flat/64.png"> -->
+    <div class="main-content">
+      <div class="container">
+        <div class="title">Convert Currency</div>
+        <!-- TO -->
+        <div class="from">
+          <div class="box-1">
+            <div class="grp-1">
+              <img class="flag" src="https://flagsapi.com/IN/flat/64.png" />
+              <select class="select-to">
+                <option value="USD">USD</option>
+                <option value="INR">INR</option>
+              </select>
+            </div>
+          </div>
+          <div class="box-2">
+            <input type="number" class="text-1" placeholder="FROM" />
+          </div>
+        </div>
+        <!-- ICON -->
+        <div class="icon">
+          <i class="fa-solid fa-arrow-right-arrow-left icon-1"></i>
+        </div>
+        <!-- FROM -->
+        <div class="to">
+          <div class="box-1">
+            <div class="grp-1">
+              <img class="flag" src="https://flagsapi.com/IN/flat/64.png" />
+              <select class="select-to">
+                <option value="USD">USD</option>
+                <option value="INR">INR</option>
+              </select>
+            </div>
+          </div>
+          <div class="box-2">
+            <input type="number" class="text-1" placeholder="TO" />
+          </div>
+        </div>
+        <!-- EXCHANGE DETAILS -->
+        <div class="ex-details">
+          <b class="ex-title">Exchange Rate</b>
+          <div class="rate">1 USD = 87 INR</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
 </html>
