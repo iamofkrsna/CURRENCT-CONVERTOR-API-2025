@@ -22,15 +22,18 @@
         <div class="from">
           <div class="box-1">
             <div class="grp-1">
-              <img class="flag" src="https://flagsapi.com/IN/flat/64.png" />
-              <select class="select-to">
-                <option value="USD">USD</option>
-                <option value="INR">INR</option>
-              </select>
+              <img class="flag" src="https://flagsapi.com/US/flat/64.png" />
+              <select class="select-to"></select>
             </div>
           </div>
           <div class="box-2">
-            <input type="number" class="text-1" placeholder="FROM" />
+            <input
+              type="number"
+              class="text-1"
+              placeholder="FROM"
+              value="1.00"
+              name="from"
+            />
           </div>
         </div>
         <!-- ICON -->
@@ -42,23 +45,27 @@
           <div class="box-1">
             <div class="grp-1">
               <img class="flag" src="https://flagsapi.com/IN/flat/64.png" />
-              <select class="select-to">
-                <option value="USD">USD</option>
-                <option value="INR">INR</option>
-              </select>
+              <select class="select-to"></select>
             </div>
           </div>
           <div class="box-2">
-            <input type="number" class="text-1" placeholder="TO" />
+            <input
+              type="number"
+              class="text-1"
+              placeholder="TO"
+              value="87.00"
+              name="to"
+            />
           </div>
         </div>
         <!-- EXCHANGE DETAILS -->
         <div class="ex-details">
           <b class="ex-title">Exchange Rate</b>
-          <div class="rate">1 USD = 87 INR</div>
+          <div class="rate">1.00 USD = 87.00 INR</div>
         </div>
       </div>
     </div>
   </body>
+  <script src="codes.js"></script>
   <script src="app.js"></script>
 </html>
