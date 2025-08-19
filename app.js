@@ -92,12 +92,12 @@ const updateValues = async (evt) => {
     if (evt === "atStart") {
       toTextBox.value = (fromTextBox.value * rate).toFixed(2);
     } else if (evt === "select-to") {
-      fromTextBox.value = (toTextBox.value / rate).toFixed(2);
+      toTextBox.value = (fromTextBox.value * rate).toFixed(2);
     } else if (evt === "select-from") {
       toTextBox.value = (fromTextBox.value * rate).toFixed(2);
-    } else if (evt === "select-to" || evt.target.name == "to") {
+    } else if (evt.target.name == "to") {
       fromTextBox.value = (toTextBox.value / rate).toFixed(2);
-    } else if (evt === "select-from" || evt.target.name == "from") {
+    } else if (evt.target.name == "from") {
       toTextBox.value = (fromTextBox.value * rate).toFixed(2);
     }
   }

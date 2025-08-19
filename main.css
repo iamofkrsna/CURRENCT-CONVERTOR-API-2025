@@ -33,8 +33,8 @@ body {
 .title {
   color: black;
   font-weight: bold;
-  margin-top: 2.5rem;
-  font-size: 2.7rem;
+  margin-top: 1.7rem;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -47,8 +47,14 @@ body {
 .from .box-1 {
   /* background-color: blue; */
   display: flex;
+  flex-direction: column;
+  text-align: left;
   padding-left: 2rem;
-  margin-top: 3.5rem;
+  margin-top: 3rem;
+}
+.from-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
 }
 
 .from .grp-1 {
@@ -68,7 +74,8 @@ body {
   font-size: 1.2rem;
   border-radius: 5px;
   outline: 0;
-  border-radius: 0;
+  border-radius: 5px;
+  padding: 3px;
 }
 
 .from .box-2 {
@@ -85,9 +92,15 @@ body {
   border-radius: 5px;
   width: 27rem;
 }
+.text-1:hover {
+  border: 3px solid #fb8500;
+}
+.text-1:focus {
+  border: 3px solid #fb8500;
+}
 
 .icon {
-  margin: 1.8rem 0rem 2rem 0rem;
+  margin: 1.8rem 0rem 0.4rem 0rem;
 }
 
 .icon-1 {
@@ -105,25 +118,19 @@ body {
 .to .box-1 {
   padding-top: 0;
   padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.to-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
 }
 
 .to .box-2 {
   /* background-color: green; */
   display: flex;
   padding-left: 3rem;
-}
-
-.ex-details {
-  margin-top: 4rem;
-  font-size: 1.4rem;
-}
-
-.ex-title {
-  font-size: 1.7rem;
-}
-
-.rate {
-  margin-top: 0.4rem;
 }
 
 .to .grp-1 {
@@ -135,4 +142,17 @@ body {
   justify-content: center;
   align-items: center;
   width: fit-content;
+}
+
+.ex-details {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+
+.ex-title {
+  font-size: 1.7rem;
+}
+
+.rate {
+  margin-top: 0.4rem;
 }
